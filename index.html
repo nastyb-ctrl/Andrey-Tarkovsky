@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Андрей Тарковский — кинематограф времени</title>
+  <meta name="description" content="Одностраничный сайт о режиссёре Андрее Тарковском в тёмном glassmorphism-стиле." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-light"></div>
+  <div class="noise"></div>
+  <div class="vision-orbits" aria-hidden="true"></div>
+  <div class="floating-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="orb orb-4"></span>
+    <span class="orb orb-5"></span>
+  </div>
+
+  <header class="site-header liquid-glass">
+    <a href="#top" class="logo">Tarkovsky</a>
+    <nav>
+      <a href="#about">О режиссёре</a>
+      <a href="#films">Фильмы</a>
+      <a href="#visuals">Стихии</a>
+      <a href="#timeline">Хронология</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy black-hero">
+        <p class="eyebrow">1932—1986 • cinema of time</p>
+        <h1 class="hero-title">Андрей<br>Тарковский</h1>
+        <p class="hero-text">
+          Режиссёр, превративший кино в пространство памяти, времени, молчания и духовного поиска.
+          Его фильмы не столько рассказывают историю, сколько создают состояние — медленное,
+          тревожное и почти гипнотическое.
+        </p>
+        <div class="hero-actions">
+          <a href="#films" class="button primary">Открыть архив</a>
+          <a href="#visuals" class="button">Визуальный язык</a>
+        </div>
+      </div>
+
+      <button class="hero-photo image-open" data-image="images/andrei-tarkovsky.jpeg" data-title="Андрей Тарковский">
+        <img src="images/andrei-tarkovsky.jpeg" alt="Андрей Тарковский с камерой" />
+        <span class="photo-caption">Андрей Тарковский • режиссёр</span>
+      </button>
+    </section>
+
+    <section id="about" class="section about-grid">
+      <div class="liquid-glass section-title">
+        <p class="section-label">О режиссёре</p>
+        <h2>Кино как внутренняя территория</h2>
+      </div>
+      <div class="liquid-glass text-card">
+        <p>
+          Андрей Тарковский — один из самых влиятельных режиссёров XX века. Его кино построено
+          не на скорости действия, а на внимании: к лицу, тишине, воде, руинам, воспоминаниям
+          и ощущению времени, которое будто становится видимым.
+        </p>
+        <p>
+          В его фильмах человек почти всегда находится перед внутренним выбором. Это кино о вере,
+          страхе, одиночестве, жертвенности и невозможности полностью объяснить мир логикой.
+          Кадры Тарковского работают как воспоминания: они не закрываются после просмотра,
+          а продолжают жить внутри зрителя.
+        </p>
+      </div>
+    </section>
+
+    <section id="films" class="section">
+      <div class="liquid-glass section-intro">
+        <p class="section-label">Фильмография • интерактивный архив</p>
+        <h2>Семь главных фильмов как стопка кассет</h2>
+        <p>
+          Нажми на любую кассету: она выедет из стопки, раскроет обложку полностью и покажет описание.
+          Блок фильмов оставлен как архивные папки-постеры.
+        </p>
+      </div>
+
+      <div class="cassette-stage liquid-glass">
+        <div class="archive-label"><span>FILM ARCHIVE</span><strong>01—07</strong></div>
+        <div class="cassette-stack">
+          <article class="cassette active" style="--i:0; --tone:#9b6a4e;">
+            <button class="cassette-shell" type="button"><span class="cassette-tab">ZONE</span><span class="cassette-year">1979</span><span class="cassette-title">Сталкер</span><img src="images/stalker.webp" alt="Сталкер" /><span class="cassette-glass"></span></button>
+            <div class="cassette-info liquid-glass"><h3>Сталкер</h3><p>Путешествие в Зону становится движением к самому уязвимому месту человека — его вере и тайному желанию.</p><button class="mini-button image-open" data-image="images/stalker.webp" data-title="Сталкер">Открыть</button></div>
+          </article>
+          <article class="cassette" style="--i:1; --tone:#8c95a0;">
+            <button class="cassette-shell" type="button"><span class="cassette-tab">ORBIT</span><span class="cassette-year">1972</span><span class="cassette-title">Солярис</span><img src="images/solaris.jpeg" alt="Солярис" /><span class="cassette-glass"></span></button>
+            <div class="cassette-info liquid-glass"><h3>Солярис</h3><p>Космос отражает не будущее, а прошлое: любовь, вину и невозможность избавиться от памяти.</p><button class="mini-button image-open" data-image="images/solaris.jpeg" data-title="Солярис">Открыть</button></div>
+          </article>
+          <article class="cassette" style="--i:2; --tone:#5f6770;">
+            <button class="cassette-shell" type="button"><span class="cassette-tab">MEMORY</span><span class="cassette-year">1975</span><span class="cassette-title">Зеркало</span><img src="images/mirror.jpeg" alt="Зеркало" /><span class="cassette-glass"></span></button>
+            <div class="cassette-info liquid-glass"><h3>Зеркало</h3><p>Память, детство, голос матери и обрывки снов складываются в самый личный фильм режиссёра.</p><button class="mini-button image-open" data-image="images/mirror.jpeg" data-title="Зеркало">Открыть</button></div>
+          </article>
+          <article class="cassette" style="--i:3; --tone:#7d5747;">
+            <button class="cassette-shell" type="button"><span class="cassette-tab">ICON</span><span class="cassette-year">1966</span><span class="cassette-title">Рублёв</span><img src="images/andrei-rublev.jpeg" alt="Андрей Рублёв" /><span class="cassette-glass"></span></button>
+            <div class="cassette-info liquid-glass"><h3>Андрей Рублёв</h3><p>Фильм о художнике, который ищет право говорить с миром через искусство и веру.</p><button class="mini-button image-open" data-image="images/andrei-rublev.jpeg" data-title="Андрей Рублёв">Открыть</button></div>
+          </article>
+          <article class="cassette" style="--i:4; --tone:#8b837a;">
+            <button class="cassette-shell" type="button"><span class="cassette-tab">CHILDHOOD</span><span class="cassette-year">1962</span><span class="cassette-title">Иван</span><img src="images/ivanovo-detstvo.webp" alt="Иваново детство" /><span class="cassette-glass"></span></button>
+            <div class="cassette-info liquid-glass"><h3>Иваново детство</h3><p>Военная история, где детство существует как потерянный сон, а память становится убежищем.</p><button class="mini-button image-open" data-image="images/ivanovo-detstvo.webp" data-title="Иваново детство">Открыть</button></div>
+          </article>
+          <article class="cassette" style="--i:5; --tone:#b9afa3;">
+            <button class="cassette-shell" type="button"><span class="cassette-tab">FIRE</span><span class="cassette-year">1986</span><span class="cassette-title">Жертва</span><img src="images/sacrifice.jpeg" alt="Жертвоприношение" /><span class="cassette-glass"></span></button>
+            <div class="cassette-info liquid-glass"><h3>Жертвоприношение</h3><p>Последний фильм Тарковского — притча о цене спасения, страхе конца и готовности к жертве.</p><button class="mini-button image-open" data-image="images/sacrifice.jpeg" data-title="Жертвоприношение">Открыть</button></div>
+          </article>
+          <article class="cassette" style="--i:6; --tone:#4d4f5f;">
+            <button class="cassette-shell" type="button"><span class="cassette-tab">LONGING</span><span class="cassette-year">1983</span><span class="cassette-title">Ностальгия</span><img src="images/nostalgia.jpeg" alt="Ностальгия" /><span class="cassette-glass"></span></button>
+            <div class="cassette-info liquid-glass"><h3>Ностальгия</h3><p>Тоска по дому становится не бытовым чувством, а духовным состоянием человека в изгнании.</p><button class="mini-button image-open" data-image="images/nostalgia.jpeg" data-title="Ностальгия">Открыть</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="visuals" class="section visual-section-v3">
+      <div class="liquid-glass visual-title-v3">
+        <p class="section-label">Визуальный язык</p>
+        <h2>Медленные планы и природные стихии</h2>
+        <p>
+          Визуальные мотивы у Тарковского работают как самостоятельный язык. Они не украшают кадр,
+          а раскрывают внутреннее состояние героя: вода становится памятью, а Зона — внутренним испытанием.
+        </p>
+      </div>
+
+      <div class="visual-cards-v3">
+        <article class="visual-card-v3 liquid-glass">
+          <button class="visual-image-v3 image-open" data-image="images/water.webp" data-title="Вода">
+            <img src="images/water.webp" alt="Вода в визуальном языке Андрея Тарковского" />
+            <span>WATER</span>
+          </button>
+          <div class="visual-copy-v3">
+            <h3>Вода</h3>
+            <p>
+              Вода у Тарковского — это память, очищение и тревога. Она появляется как дождь,
+              отражение, влажный воздух или затопленное пространство и делает время физически ощутимым.
+            </p>
+            <p>
+              В таких сценах прошлое будто не исчезает, а продолжает растворяться в кадре.
+            </p>
+          </div>
+        </article>
+
+        <article class="visual-card-v3 liquid-glass">
+          <button class="visual-image-v3 image-open" data-image="images/zone.webp" data-title="Зона">
+            <img src="images/zone.webp" alt="Зона из фильма Сталкер" />
+            <span>ZONE</span>
+          </button>
+          <div class="visual-copy-v3">
+            <h3>Зона</h3>
+            <p>
+              Зона в «Сталкере» — не просто место. Это испытание, где пространство становится
+              отражением внутреннего состояния человека: его страха, надежды и скрытого желания.
+            </p>
+            <p>
+              Заброшенные рельсы, трава, вода и туман создают ощущение мира, который одновременно реален и невозможен.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="fact-archive-v3 liquid-glass">
+        <div class="fact-heading">
+          <p class="section-label">Факты о методе</p>
+          <h3>Мини-архив наблюдений</h3>
+          <p>Нажми на карточку — она плавно раскрывается, как маленькая архивная кассета.</p>
+        </div>
+
+        <div class="fact-stack-v3">
+          <button class="fact-card-v3 active" type="button">
+            <span>01</span>
+            <strong>Запечатлённое время</strong>
+            <p>Тарковский воспринимал кино как способ запечатлеть течение времени. Длинный план нужен, чтобы зритель почувствовал длительность момента.</p>
+          </button>
+
+          <button class="fact-card-v3" type="button">
+            <span>02</span>
+            <strong>Стихии как язык</strong>
+            <p>Вода, огонь, ветер и земля часто заменяют прямое объяснение эмоций: природа говорит за героя и показывает то, что нельзя произнести словами.</p>
+          </button>
+
+          <button class="fact-card-v3" type="button">
+            <span>03</span>
+            <strong>Память и детство</strong>
+            <p>Воспоминания о детстве стали основой многих сцен «Зеркала», самого личного фильма режиссёра, где прошлое существует как живое пространство.</p>
+          </button>
+
+          <button class="fact-card-v3" type="button">
+            <span>04</span>
+            <strong>Зона как сознание</strong>
+            <p>В «Сталкере» Зона — не фантастическое место, а отражение внутреннего мира человека: страха, надежды, веры и скрытого желания.</p>
+          </button>
+
+          <button class="fact-card-v3" type="button">
+            <span>05</span>
+            <strong>Искусство и вера</strong>
+            <p>Тарковский считал, что искусство должно менять человека изнутри: делать его внимательнее, глубже и духовно сильнее.</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section liquid-glass">
+      <blockquote>«Цель искусства — подготовить человека к смерти, вспахать и взрыхлить его душу, сделав её способной обратиться к добру».</blockquote>
+    </section>
+
+    <section id="timeline" class="section">
+      <div class="liquid-glass section-intro">
+        <p class="section-label">Хронология</p>
+        <h2>Жизнь и фильмы</h2>
+        <p>Путь Тарковского был коротким, но чрезвычайно плотным: от военной драмы к философской фантастике, от личной памяти к притче о конце мира.</p>
+      </div>
+      <div class="timeline liquid-glass">
+        <div class="timeline-item"><span>1932</span><p>Родился в селе Завражье. Детство, природа и память о доме позже станут важными мотивами его кино.</p></div>
+        <div class="timeline-item"><span>1962</span><p>«Иваново детство» приносит международное признание и показывает особый поэтический язык режиссёра.</p></div>
+        <div class="timeline-item"><span>1972</span><p>«Солярис» переосмысляет научную фантастику как разговор о любви, вине и памяти.</p></div>
+        <div class="timeline-item"><span>1979</span><p>«Сталкер» становится одной из главных работ о вере, сомнении и человеческом желании.</p></div>
+        <div class="timeline-item"><span>1986</span><p>«Жертвоприношение» завершает творческий путь режиссёра как духовное завещание.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="liquid-glass">
+    <p>Одностраничный сайт, посвящённый кинематографу Андрея Тарковского.</p>
+    <p>© 2026</p>
+  </footer>
+
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button">×</button>
+    <div class="lightbox-card liquid-glass">
+      <img src="" alt="" />
+      <p></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
